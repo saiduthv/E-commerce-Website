@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="bootstrap.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Store</title>
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+     crossorigin="anonymous">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     <script src="https://kit.fontawesome.com/2a873c8eba.js" crossorigin="anonymous"></script>
+
+     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+     <link rel="stylesheet" href="./css/style.css">
+	<style type="text/css" media="screen">
+	
+		li a{
+  			display: block;
+  			color: white;
+  			text-align: center;
+  			padding: 14px 16px;
+  			text-decoration: none;
+		}
+		li:hover{
+			background-color: black;
+		}
+		.reg{
+			text-align: center;
+			color: peru;
+			background-color: Lavender;
+			padding: 25px;
+		}
+		.p1{
+			text-align: center;
+
+		}
+		.back{
+		    border: 1px dotted;
+		    background-color: black;
+		    padding: 10px;
+		    margin-left: 10%;
+		    margin-right: 10%;
+		    border-radius: 20px;
+		    margin-left: 35%;
+		    padding: 30px;
+		    margin-right: 35%;
+		    color: white;
+		}
+		.text1{
+		    border-radius: 10px 10px;
+		    border-width: 1px;
+		    box-sizing: border-box;
+		    width: 60%;
+			color: black;
+		}
+		/*.div1{
+			text-align: center;
+		}*/
+		.div2{
+			text-align: center;
+		}
+
+		.log{
+			background-color: tan;
+			border-radius: 25px 25px;
+			border: 1px solid green;
+			color: white;
+			padding: 7px 12px;
+    		font-size: 30px;
+		}
+	</style>
+
+	<script type="text/javascript">
+		function fun1()
+		{
+  			document.getElementById("t1").style.backgroundColor="WhiteSmoke";
+		}
+		function fun2()
+		{
+  			document.getElementById("t2").style.backgroundColor="WhiteSmoke";
+		}
+		function fun3()
+		{
+			document.getElementById("t1").style.backgroundColor="White";
+		}
+		function fun4()
+		{
+			document.getElementById("t2").style.backgroundColor="White";
+		}
+		
+		function check()
+		{
+  			  var c,x,y;
+  
+		 c=document.getElementById("t1").value; 
+		 if(c=="")
+		{
+		  alert("Please fill the E-Mail ID");
+		   return false;
+		}
+		x=c.indexOf("@");
+		y=c.indexOf(".");
+		if(x<1)
+		{alert("@ is missing in your email id");
+		 return false;}
+		if(y<0)
+		{alert(" .  is missing in your email id");
+		 return false;}
+		if(y-x!=6)
+		{alert("Invalid Email ID");
+		 return false;}
+		if(c.length>y+2)
+		{;}
+		else
+		{alert("Invalid EMail ID");
+		 return false;}
+		  var a;
+		  a=document.getElementById("t2").value;
+		  if(a=="")
+		{
+		  alert("Please fill the password");
+		  return false;
+		}
+		
+		alert("Login successfull!!");
+	
+    }
+	</script>
+</head>
+<body>
+	    <header>
+				<div class="container">
+					<div class="row"> 
+						<div class="col-md-4 col-sm-12 col-12">
+						  <div class="btn-group">
+							  <button class="btn border dropdown-toggle my-md-4 my-2 text-white" data-toggle="dropdown"
+							   aria-haspopup="true" aria-expanded="false">INR</button>
+							   <div class="dropdown-menu">
+								   <a href="#" class="dropdown-item">USD</a>
+							   </div>
+						  </div>
+						</div>
+						<div class="col-md-4 col-12 text-center">
+							<h2 class="my-md-3 site-title text-white">Global Kart</h2>
+						</div>
+						<div class="col-md-4 col-12 text-right">
+							<p class="my-md-4 header-links">
+								<a href="login1.html" class="px-2">Sign in</a>
+								<a href="register1.html" class="px-1">Create Account</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid p-0 bg-white">
+						<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					   
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+								  <span class="navbar-toggler-icon"></span>
+								</button>
+								<div class="collapse navbar-collapse" id="navbarNav">
+								  <ul class="navbar-nav">
+									<li class="nav-item active">
+									  <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+									</li>
+									<li class="nav-item">
+									  <a class="nav-link" href="feedback.html">  FEEDBACK</a>
+									</li>
+								   
+								
+										  <li class="nav-item">
+												<a class="nav-link" href="about.html">ABOUT US</a>
+											  </li>
+								   
+								  </ul>
+								</div>
+							 
+							  </nav>
+				</div>
+			</header>
+	
+	<h1 class="reg">Login</h1>
+	<br><br>
+	<div class="back">
+		<form method="get" accept-charset="utf-8">
+			Email ID &nbsp : <input style="margin-left: 10px;" class="text1" type="text"="user mail ID" placeholder="mail ID"id="t1" onfocus="fun1()" onblur="fun3()"><br><br>
+			password : <input style="margin-left: 9px;" class="text1" type="password" placeholder="Enter password" id="t2" onfocus="fun2()" onblur="fun4()"><br><br>
+		</form>
+	</div><br>
+	
+  
+	<div class="div2">
+		<a class="log" href="index.html" target="_self" onclick="return check()">Login</a>
+	</div><br><br>
+<center>
+	<p>Dont have an Account!!<a href="register1.html">Click here..</a></p>
+</center>
+</body>
+</html>
